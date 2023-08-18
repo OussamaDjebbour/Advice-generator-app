@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+.container {
+  width: 500px;
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 30px 80px;
+  position: relative;
+  border-radius: 15px;
+}
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.advice-text {
+  text-align: center;
+}
+
+.pattern-divider {
+  width: 100%;
+}
+.dice {
+  position: absolute;
+  padding: 20px;
+  background-color: hsl(150, 100%, 66%);
+  bottom: -35px;
+  border-radius: 50%;
+  border: none;
+}
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+@media (width < 500px) {
+  .container {
+    width: 90%;
+  }
+  .pattern-divider {
+    content: url("images/pattern-divider-mobile.svg");
+  }
+}
